@@ -121,8 +121,7 @@ const EditFood = (props) => {
     useEffect(() => {
         if (actionType === 'edit') {
             setId(selectedValue.id);
-            setName(selectedValue.feeding_time);
-
+            setName(selectedValue.name);
         } else {
             setId(null);
             setName("");
