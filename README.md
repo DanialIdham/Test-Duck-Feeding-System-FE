@@ -1,2 +1,3 @@
-I ran this using NPM start
-I implemented redux thunk for the fun of it. I mean why not.
+Run this using NPM
+
+I implemented this using Redux Thunk and the material ui libaray for the design.
