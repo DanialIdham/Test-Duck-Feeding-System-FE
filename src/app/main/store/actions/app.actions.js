@@ -16,7 +16,6 @@ export const getAllScheduleFeeding = (params) => {
     const request = axios({
         method: "get",
         url: `${process.env.REACT_APP_ENDPOINT}/feeding-schedule`,
-        params: params,
         withCredentials: false,
         data: {}
     });
@@ -33,7 +32,6 @@ export const getAllFarm = () => {
     const request = axios({
         method: "get",
         url: `${process.env.REACT_APP_ENDPOINT}/farm`,
-        params: params,
         withCredentials: false,
         data: {}
     });
@@ -50,7 +48,6 @@ export const getAllFood = () => {
     const request = axios({
         method: "get",
         url: `${process.env.REACT_APP_ENDPOINT}/food`,
-        params: params,
         withCredentials: false,
         data: {}
     });
@@ -67,7 +64,6 @@ export const addFarm = (data) => {
     const request = axios({
         method: "post",
         url: `${process.env.REACT_APP_ENDPOINT}/farm`,
-        params: params,
         withCredentials: false,
         data: data
     });
@@ -85,7 +81,6 @@ export const updateFarm = (data) => {
     const request = axios({
         method: "put",
         url: `${process.env.REACT_APP_ENDPOINT}/farm`,
-        params: params,
         withCredentials: false,
         data: data
     });
@@ -102,7 +97,6 @@ export const addScheduleFeeding = (data) => {
     const request = axios({
         method: "post",
         url: `${process.env.REACT_APP_ENDPOINT}/feeding-schedule`,
-        params: params,
         withCredentials: false,
         data: data
     });
@@ -120,7 +114,6 @@ export const updateScheduleFeeding = (data) => {
     const request = axios({
         method: "put",
         url: `${process.env.REACT_APP_ENDPOINT}/feeding-schedule`,
-        params: params,
         withCredentials: false,
         data: data
     });
@@ -137,7 +130,6 @@ export const addFood = (data) => {
     const request = axios({
         method: "post",
         url: `${process.env.REACT_APP_ENDPOINT}/food`,
-        params: params,
         withCredentials: false,
         data: data
     });
@@ -168,7 +160,6 @@ export const getAllScheduled = () => {
     const request = axios({
         method: "get",
         url: `${process.env.REACT_APP_ENDPOINT}/scheduled`,
-        params: params,
         withCredentials: false,
         data: {}
     });
@@ -186,7 +177,6 @@ export const addScheduled = (data) => {
     const request = axios({
         method: "post",
         url: `${process.env.REACT_APP_ENDPOINT}/scheduled`,
-        params: params,
         withCredentials: false,
         data: data
     });
@@ -203,7 +193,6 @@ export const updateScheduled = (data) => {
     const request = axios({
         method: "put",
         url: `${process.env.REACT_APP_ENDPOINT}/scheduled`,
-        params: params,
         withCredentials: false,
         data: data
     });
