@@ -33,13 +33,14 @@
     "styled-components": "^5.3.3",
     "web-vitals": "^1.0.1"
   },
+  "homepage": ".",
   "devDependencies": {
     "react-scripts": "^4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "startprod": "env-cmd -f .env.production npm start",
-    "build": "env-cmd -f .env.production npm run build",
+    "build": "react-scripts build",
     "build:prod": "env-cmd -f .env.production npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
