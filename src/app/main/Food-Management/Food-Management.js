@@ -70,7 +70,6 @@ const FoodManagement = (props) => {
                 <Button variant="contained" onClick={() => backToMain()} color="primary">Back To Main</Button>
                 <Button variant="contained" onClick={() => goToFarm()} color="primary">Farm Management</Button>
                 <Button variant="contained" onClick={() => handleClickOpen("", 'add')} color="default">Add New Food</Button>
-                <Button variant="contained" color="primary">Schedule A Feeding</Button>
             </ButtonGroup>
             <div style={{ height: 400, width: '100%' }}>
                 <EditFood

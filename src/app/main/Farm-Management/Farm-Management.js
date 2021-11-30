@@ -69,7 +69,6 @@ const FarmManagement = (props) => {
                 <Button variant="contained" onClick={() => backToMain()} color="primary">Back To Schedule Feeding</Button>
                 <Button variant="contained" onClick={() => gotToFood()} color="primary">Food Management</Button>
                 <Button variant="outlined" onClick={() => handleClickOpen('', 'add')} color="default">Add A Farm</Button>
-                <Button variant="contained" color="primary">Schedule A Feeding</Button>
             </ButtonGroup>
             <div style={{ height: 400, width: '100%' }}>
                 <EditFarm
