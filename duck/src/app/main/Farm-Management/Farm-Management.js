@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect, Fragment } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import moment from 'moment';
 import * as Actions from "../store/actions";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@mui/styles';
 import Button from '@material-ui/core/Button';
 import {
     Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, TextField, Dialog, DialogActions,
