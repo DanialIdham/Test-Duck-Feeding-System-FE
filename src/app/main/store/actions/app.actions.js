@@ -17,6 +17,7 @@ export const getAllScheduleFeeding = (params) => {
         method: "get",
         url: `${process.env.REACT_APP_ENDPOINT}/feeding-schedule`,
         params: params,
+        withCredentials: false,
         data: {}
     });
     return (dispatch) =>
@@ -29,7 +30,13 @@ export const getAllScheduleFeeding = (params) => {
 }
 
 export const getAllFarm = () => {
-    const request = axios.get(`${process.env.REACT_APP_ENDPOINT}/farm`)
+    const request = axios({
+        method: "get",
+        url: `${process.env.REACT_APP_ENDPOINT}/farm`,
+        params: params,
+        withCredentials: false,
+        data: {}
+    });
     return (dispatch) =>
         request.then((response) =>
             dispatch({
@@ -40,7 +47,13 @@ export const getAllFarm = () => {
 }
 
 export const getAllFood = () => {
-    const request = axios.get(`${process.env.REACT_APP_ENDPOINT}/food`)
+    const request = axios({
+        method: "get",
+        url: `${process.env.REACT_APP_ENDPOINT}/food`,
+        params: params,
+        withCredentials: false,
+        data: {}
+    });
     return (dispatch) =>
         request.then((response) =>
             dispatch({
@@ -51,10 +64,13 @@ export const getAllFood = () => {
 }
 
 export const addFarm = (data) => {
-    const request = axios.post(
-        `${process.env.REACT_APP_ENDPOINT}/farm`,
-        data
-    )
+    const request = axios({
+        method: "post",
+        url: `${process.env.REACT_APP_ENDPOINT}/farm`,
+        params: params,
+        withCredentials: false,
+        data: data
+    });
     return (dispatch) =>
         request.then((response) =>
             dispatch({
@@ -66,10 +82,13 @@ export const addFarm = (data) => {
 
 
 export const updateFarm = (data) => {
-    const request = axios.put(
-        `${process.env.REACT_APP_ENDPOINT}/farm`,
-        data
-    )
+    const request = axios({
+        method: "put",
+        url: `${process.env.REACT_APP_ENDPOINT}/farm`,
+        params: params,
+        withCredentials: false,
+        data: data
+    });
     return (dispatch) =>
         request.then((response) =>
             dispatch({
@@ -80,10 +99,13 @@ export const updateFarm = (data) => {
 }
 
 export const addScheduleFeeding = (data) => {
-    const request = axios.post(
-        `${process.env.REACT_APP_ENDPOINT}/feeding-schedule`,
-        data
-    )
+    const request = axios({
+        method: "post",
+        url: `${process.env.REACT_APP_ENDPOINT}/feeding-schedule`,
+        params: params,
+        withCredentials: false,
+        data: data
+    });
     return (dispatch) =>
         request.then((response) =>
             dispatch({
@@ -95,10 +117,13 @@ export const addScheduleFeeding = (data) => {
 
 
 export const updateScheduleFeeding = (data) => {
-    const request = axios.put(
-        `${process.env.REACT_APP_ENDPOINT}/feeding-schedule`,
-        data
-    )
+    const request = axios({
+        method: "put",
+        url: `${process.env.REACT_APP_ENDPOINT}/feeding-schedule`,
+        params: params,
+        withCredentials: false,
+        data: data
+    });
     return (dispatch) =>
         request.then((response) =>
             dispatch({
@@ -109,10 +134,13 @@ export const updateScheduleFeeding = (data) => {
 }
 
 export const addFood = (data) => {
-    const request = axios.post(
-        `${process.env.REACT_APP_ENDPOINT}/food`,
-        data
-    )
+    const request = axios({
+        method: "post",
+        url: `${process.env.REACT_APP_ENDPOINT}/food`,
+        params: params,
+        withCredentials: false,
+        data: data
+    });
     return (dispatch) =>
         request.then((response) =>
             dispatch({
@@ -137,7 +165,13 @@ export const updateFood = (data) => {
 }
 
 export const getAllScheduled = () => {
-    const request = axios.get(`${process.env.REACT_APP_ENDPOINT}/scheduled`)
+    const request = axios({
+        method: "get",
+        url: `${process.env.REACT_APP_ENDPOINT}/scheduled`,
+        params: params,
+        withCredentials: false,
+        data: {}
+    });
     return (dispatch) =>
         request.then((response) =>
             dispatch({
@@ -149,10 +183,13 @@ export const getAllScheduled = () => {
 
 
 export const addScheduled = (data) => {
-    const request = axios.post(
-        `${process.env.REACT_APP_ENDPOINT}/scheduled`,
-        data
-    )
+    const request = axios({
+        method: "post",
+        url: `${process.env.REACT_APP_ENDPOINT}/scheduled`,
+        params: params,
+        withCredentials: false,
+        data: data
+    });
     return (dispatch) =>
         request.then((response) =>
             dispatch({
@@ -163,10 +200,13 @@ export const addScheduled = (data) => {
 }
 
 export const updateScheduled = (data) => {
-    const request = axios.put(
-        `${process.env.REACT_APP_ENDPOINT}/scheduled`,
-        data
-    )
+    const request = axios({
+        method: "put",
+        url: `${process.env.REACT_APP_ENDPOINT}/scheduled`,
+        params: params,
+        withCredentials: false,
+        data: data
+    });
     return (dispatch) =>
         request.then((response) =>
             dispatch({
